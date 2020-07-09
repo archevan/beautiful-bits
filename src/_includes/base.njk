@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>{{ site.title }}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm sticky-top navbar-dark myNav">
+      <a class="navbar-brand header" href="/">
+        <span class="header__tea">beautiful</span>bits
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnavaltmarkup" aria-controls="navbarnavaltmarkup" aria-expanded="false" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarnavaltmarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link header-link" href="#">about</a>
+          <a class="nav-item nav-link header-link" href="#">archive</a>
+          <a class="nav-item nav-link header-link" href="#">bitmap</a>
+        </div>
+      </div>
+    </nav>
+    {{ content | safe }}
+    <!-- optional javascript -->
+    <!-- jquery first, then popper.js, then bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>

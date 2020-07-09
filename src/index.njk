@@ -1,0 +1,66 @@
+---
+layout: main.njk
+---
+<!-- Featured Posts -->
+<section id="featured">
+    <div class="container-fluid">
+        <div class="row section-header">
+            <h2 class="section-header__text">Featured</h2>
+        </div>
+        <div class="row">
+            {% for post in collections.featured | reverse %}
+                <div class="col-md-6 post">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="date">{{ post.date | formatDate }}</p>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="post-header"><a class="post-header__link" href={{ "/posts/" + post.fileSlug }}>{{ post.data.title.substring(0, 30) }}</a></h4>
+                        </div>
+                        <div class="col-lg-4 tag-wrapper">
+                            <a href="#" class="badge badge-primary">post</a>
+                            <a href="#" class="badge badge-warning">featured</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            {{ post.templateContent.replace('/<[^>]+>/g', '').substring(3, 300) }} ...
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Newest Posts -->
+<section id="newest">
+    <div class="container-fluid">
+        <div class="row section-header">
+            <h2 class="section-header__text">Newest Posts</h2>
+        </div>
+        <div class="row">
+            {% for post in collections.post | reverse | batch(4) | first %}
+                <div class="col-md-6 post">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="date">{{ post.date | formatDate }}</p>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="post-header"><a href={{ "/posts/" + post.fileSlug }} class="post-header__link">{{ post.data.title | truncate(30) }}</a></h4>
+                        </div>
+                        <div class="col-lg-4 tag-wrapper">
+                            <a href="#" class="badge badge-primary">post</a>
+                            <a href="#" class="badge badge-info">book review</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            {{ post.templateContent.replace('/<[^>]+>/g', '').substring(3, 300) }} ...
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

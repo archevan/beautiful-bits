@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+#featured, #newest {
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 2;
+}
+
+.badge {
+    padding: .5rem;
+}
+
+.myNav {
+    padding: 0 9%;
+    background-color: #222831;
+}
+
+.header {
+    font-size: 1.7rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.post-header__link {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: black;
+}
+
+.header__tea {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.nav-item {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.header-link {
+    font-size: 1.2rem;
+}
+
+.container-fluid {
+    padding: 1.5% 10% 0 10%;
+}
+
+.post {
+    padding: .5rem 1rem;
+}
+
+.section-header {
+    padding: .6rem;
+}
+
+.section-header__text {
+    font-size: 1.3rem;
+    padding: .5rem;
+    background-color: #fff2ac;
+    font-family: 'Playfair Display', serif;
+    background-image: linear-gradient(to top, #ffe359 0%, #fff2ac 100%);
+}
+
+.date {
+    color: #30475E;
+    opacity: .5;
+    margin-bottom: .35rem;
+}
+
+.tag-wrapper {
+    margin-bottom: .8rem;
+}
