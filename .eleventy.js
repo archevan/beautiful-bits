@@ -15,4 +15,10 @@ module.exports = function(eleventyConfig) {
     const intlDate = new Intl.DateTimeFormat('en-US').format(date);
     return intlDate.toString();
   });
+
+  return {
+    dir: {
+      input: "src"
+    }
+  };
 };
