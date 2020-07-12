@@ -1,0 +1,22 @@
+{
+  "name": "beautifulbits",
+  "version": "1.0.0",
+  "description": "Personal Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archevan/beautiful-bits.git"
+  },
+  "author": "Evan Seils",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archevan/beautiful-bits/issues"
+  },
+  "homepage": "https://github.com/archevan/beautiful-bits#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0"
+  }
+}
