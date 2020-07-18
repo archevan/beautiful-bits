@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
+/* Bootstrap Overrides */
+.navbar-toggler {
+    padding: .1rem .2rem;
+}
+
 #featured, #newest {
     font-family: 'Noto Sans', sans-serif;
     line-height: 2;
@@ -19,7 +24,7 @@
     font-family: 'Playfair Display', serif;
     font-weight: 400;
     font-style: italic;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .post-header__link {
